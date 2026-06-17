@@ -30,3 +30,5 @@ console.log(`SOMA: ${num1} + ${num2} + ${num3} + ${num4} = ${soma}`);
 multi = num1 * num2 * num3 * num4;
 console.log(`A multiplicação dos quatro valores exibidos é: ${multi}`);
 console.log(`MULTIPLACÂO: ${num1} x ${num2} x ${num3} x ${num4} = ${multi}`);
+
+// comentário inserido dia 17/06/2026
