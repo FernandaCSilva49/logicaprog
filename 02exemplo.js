@@ -11,6 +11,7 @@
 // exibindo os vetores com for || aparece um embaixo do outro
 
 let alunos = ["Ana", "Bruno", "Carlos", "Diana"];
+let numeros = [6, 23, -7, 18, 4, 92, 15, 33, 0, 50];
 // let notas = [8.3, 3, 8, 10, 8];
 
 // // for (let cont = 0; cont < 4; cont ++){
@@ -43,21 +44,60 @@ let alunos = ["Ana", "Bruno", "Carlos", "Diana"];
 
 // push adiciona no final do vetor
 
-alunos.push("Raimundo");
-console.log(alunos);
+// alunos.push("Raimundo");
+// console.log(alunos);
 
-// pop remove no final do vetor
+// // pop remove no final do vetor
 
-alunos.pop();
-console.log(alunos);
+// alunos.pop();
+// console.log(alunos);
 
-// unshift adiciona no inicio, substitui o 0 e todos os outros pulam 1 de indice
+// // unshift adiciona no inicio, substitui o 0 e todos os outros pulam 1 de indice
 
-alunos.unshift("Raimundo");
-console.log(alunos);
+// alunos.unshift("Raimundo");
+// console.log(alunos);
 
-// shift remove no inicio
+// // shift remove no inicio
 
-alunos.shift();
-console.log(alunos);
+// alunos.shift();
+// console.log(alunos);
 
+console.log(numeros);
+
+// ordem crescente
+
+numeros.sort((a, b) => a - b);      // tem que especificar que quer na ordem crescente
+console.log(numeros);
+
+// ordem decrescente
+
+numeros.sort((a, b) => b - a);
+console.log(numeros);
+
+// matriz com 2 linhas e 2 colunas
+
+let matriz = [
+    [1, 2],
+    [3, 4]
+];
+
+// matriz com 5 linhas e 4 colunas
+
+let letras = [
+    ["a", "b", "c", "d"],
+    ["e", "f", "g", "h"],
+    ["i", "j", "k", "l"],
+    ["m", "n", "o", "p"],
+    ["q", "r", "s", "t"]
+]
+
+console.log(matriz);
+console.log(letras);
+
+// for dentro do for pra exibir toda a matriz
+
+for (let linha = 0; linha < 5; linha++){
+    for (let col = 0; col < 4; col++){
+        console.log(letras[linha][col]);
+    };
+};
